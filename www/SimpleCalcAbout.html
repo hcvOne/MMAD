@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html charset="UTF-8">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and 
+		height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, 
+		maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, 
+		target-densitydpi=device-dpi" />
+        
+        <title>SimpleCalc2</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/SimpleCalcStyle.css" />
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/SimpleCalcScript.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </head>
+    <header>
+	   <h1>SimpleCalc</h1>
+    </header>
+    <body>
+        <form>
+    <h3>Developer</h3>
+    <a href="mailto:hcruz@faculty.icprjc.edu?Subject=SimpleCalc" 
+		style="color: darkslategray;">Herminio Cruz-Villanueva, Professor</a><br>
+    <a href="http://www.icprjc.edu/localidad/mayaguez.html"
+		style="color: darkslategray;">ICPR Junior College - Mayaguez Campus</a><br>
+	<br>
+    <h3>JavaScript Code</h3>
+    <code>
+        <pre>
+// Add numbers
+function addNumbers(){
+    var num1 = Number(document.getElementById("num1").value);
+    var num2 = Number(document.getElementById("num2").value);
+    document.getElementById("numResult").value = num1 + num2;
+}
+// Substract numbers
+function subNumbers(){
+    var num1 = Number(document.getElementById("num1").value);
+    var num2 = Number(document.getElementById("num2").value);
+    document.getElementById("numResult").value = num1 - num2;
+}
+// Multiply numbers
+function mulNumbers(){
+    var num1 = Number(document.getElementById("num1").value);
+    var num2 = Number(document.getElementById("num2").value);
+    document.getElementById("numResult").value = num1 * num2;
+}
+// Divide numbers
+function divNumbers(){
+    var num1 = Number(document.getElementById("num1").value);
+    var num2 = Number(document.getElementById("num2").value);
+    document.getElementById("numResult").value = num1 / num2;
+}
+        </pre>
+    </code>
+    <br>
+    <h3>CSS Code</h3>
+    <code>
+        <pre>
+/* Main parts of the web page */
+header, body, footer {
+    width: 99%;
+    font-family: Verdana;
+    text-align: center;
+    padding: 2px;
+    margin: 1px;
+}
+header, footer {
+    background-color: darkslategray;
+    color: lightcyan;
+}
+header {
+    border-radius: 20px 0px 0px 0px;
+}
+body {
+    background-color: lightblue;
+    color: darkslategray;
+}
+footer {
+    border-radius: 0px 0px 20px 0px;
+}
+/* Controls of the web page */
+input {
+    text-align: right;
+    border-radius: 10px;
+    border-style: inset;
+    border-color: darkslategray;
+    width: 98%;
+}
+
+button {
+    text-align: center;
+    color: white;
+    background-color: darkslategray;
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 10px;
+    border-style: outset;
+    width: 10%;
+}
+/* Web page dividers */
+hr {
+    height: 2px;
+    background-color: darkslategray;
+    color: darkslategray;
+    width: 98%;
+}
+/* Links */
+a:link, a:visited {
+    color: lightcyan;
+}
+a:hover, a:active {
+    color: white;
+    font-weight: bolder;
+}
+        </pre>
+    </code>
+</form>
+</body>
+<footer>
+    <a href="SimpleCalc.html">Home</a>
+</footer>
+</html> 

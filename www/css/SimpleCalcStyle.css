@@ -1,0 +1,55 @@
+/* Main parts of the web page */
+header, body, footer {
+	width: 99%;
+	font-family: Verdana;
+	text-align: center;
+	padding: 2px;
+	margin: 1px;
+}
+header, footer {
+	background-color: darkslategray;
+    color: lightcyan;
+}
+header {
+	border-radius: 20px 0px 0px 0px;
+}
+body {
+    background-color: lightblue;
+    color: darkslategray;
+}
+footer {
+	border-radius: 0px 0px 20px 0px;
+}
+/* Controls of the web page */
+input {
+    text-align: right;
+    border-style: inset;
+    border-color: darkslategray;
+    width: 98%;
+}
+
+button {
+    text-align: center;
+    color: white;
+    background-color: darkslategray;
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 10px;
+    border-style: outset;
+    width: 10%;
+}
+/* Web page dividers */
+hr {
+    height: 2px;
+    background-color: darkslategray;
+    color: darkslategray;
+    width: 98%;
+}
+/* Links */
+a:link, a:visited {
+    color: lightcyan;
+}
+a:hover, a:active {
+    color: white;
+    font-weight: bolder;
+}
